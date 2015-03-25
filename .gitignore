@@ -1,2 +1,5 @@
 /.idea/
 /target/
+/.sass-cache/
+/.sass-work/
+/.jruby-container/
