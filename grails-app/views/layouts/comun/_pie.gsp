@@ -1,0 +1,1 @@
+<div class="footer" role="contentinfo">Copyright Jagusan 2015</div>

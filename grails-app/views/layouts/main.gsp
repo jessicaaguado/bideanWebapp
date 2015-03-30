@@ -12,14 +12,26 @@
 		<link rel="shortcut icon" href="${assetPath(src: 'favicon.ico')}" type="image/x-icon">
 		<link rel="apple-touch-icon" href="${assetPath(src: 'apple-touch-icon.png')}">
 		<link rel="apple-touch-icon" sizes="114x114" href="${assetPath(src: 'apple-touch-icon-retina.png')}">
-  		<asset:stylesheet src="bidean.css"/>
-		<asset:javascript src="jquery.js"/>
+  		<asset:stylesheet src="bidean.min.css"/>
+		<asset:javascript src="libs/modernizr-2.6.2.min.js"/>
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
-		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
-		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
+        <header>
+            <g:render template="layouts/comun/menu"/>
+        </header>
+
+        <div class="container">
+            <g:layoutBody/>
+        </div>
+
+        <footer>
+            <g:render template="layouts/comun/pie"/>
+        </footer>
+
+
+        <asset:javascript src="libs/jquery-1.11.2.min.js"/>
+        <asset:javascript src="bidean.min.js"/>
 	</body>
 </html>
+
