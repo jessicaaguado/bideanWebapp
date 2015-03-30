@@ -25,7 +25,7 @@
 	<body>
 
         <header>
-            <g:render template="layouts/comun/menu"/>
+            <g:render template="/layouts/comun/menu"/>
         </header>
 
         <div class="container" role="main">
@@ -33,7 +33,7 @@
         </div>
 
         <footer>
-            <g:render template="layouts/comun/pie"/>
+            <g:render template="/layouts/comun/pie"/>
         </footer>
 
         <asset:javascript src="libs/jquery-1.11.2.min.js"/>
